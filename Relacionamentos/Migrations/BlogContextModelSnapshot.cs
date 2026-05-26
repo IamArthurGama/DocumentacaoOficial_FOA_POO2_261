@@ -40,7 +40,7 @@ namespace Relacionamentos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Blogs");
+                    b.ToTable("Blogs", (string)null);
                 });
 
             modelBuilder.Entity("Relacionamentos.Models.Post", b =>
@@ -72,7 +72,7 @@ namespace Relacionamentos.Migrations
 
                     b.HasIndex("BlogId");
 
-                    b.ToTable("Posts");
+                    b.ToTable("Posts", (string)null);
                 });
 
             modelBuilder.Entity("Relacionamentos.Models.Post", b =>
