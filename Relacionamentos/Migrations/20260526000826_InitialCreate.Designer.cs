@@ -11,7 +11,7 @@ using Relacionamentos.Data;
 
 namespace Relacionamentos.Migrations
 {
-    [DbContext(typeof(BlogContext))]
+    [DbContext(typeof(RelacionamentosContext))]
     [Migration("20260526000826_InitialCreate")]
     partial class InitialCreate
     {

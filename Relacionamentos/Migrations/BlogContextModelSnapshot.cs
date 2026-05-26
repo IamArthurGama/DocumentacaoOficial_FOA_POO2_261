@@ -10,7 +10,7 @@ using Relacionamentos.Data;
 
 namespace Relacionamentos.Migrations
 {
-    [DbContext(typeof(BlogContext))]
+    [DbContext(typeof(RelacionamentosContext))]
     partial class BlogContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

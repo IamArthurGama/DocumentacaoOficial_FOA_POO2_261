@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 // EF Core + SQL Server LocalDB
-builder.Services.AddDbContext<BlogContext>(options =>
+builder.Services.AddDbContext<RelacionamentosContext>(options =>
  options.UseSqlServer(
  builder.Configuration.GetConnectionString("Blog")));
 // Repository agora usa o EF (substitui o Memoria)
