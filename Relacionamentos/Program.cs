@@ -9,7 +9,7 @@ builder.Services.AddControllersWithViews();
 // EF Core + SQL Server LocalDB
 builder.Services.AddDbContext<RelacionamentosContext>(options =>
  options.UseSqlServer(
- builder.Configuration.GetConnectionString("Blog")));
+ builder.Configuration.GetConnectionString("RelacionamentosConnection")));
 // Repository agora usa o EF (substitui o Memoria)
 //builder.Services.AddScoped<IBlogRepositorio, BlogRepositorioEF>();
 
